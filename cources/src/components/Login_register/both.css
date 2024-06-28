@@ -1,0 +1,148 @@
+.container_login {
+    /* margin-top: 2rem; */
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container_form {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.login_inner{
+    border: 3px solid #000;
+    border-radius: 1rem;
+
+    padding: 2rem;
+ 
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 20px 15px;
+    
+}
+
+.login_form > div{
+    margin: 15px 30px;
+    width: 100%;
+}
+
+.login_title{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.input_box{
+    position: relative;
+
+}
+
+.input{
+    width: 100%;
+    border-radius: 15px;
+    height: 2rem;
+    cursor: pointer;
+    padding: 1rem;
+    border: 2px solid #000;
+
+    transition: border-color 0.2s linear;
+
+}
+
+.input_label{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    pointer-events: none;
+
+    transition: top .3s linear;
+}
+
+.input:hover{
+    border-color: #3e6ae1;
+}
+
+.input_label:hover ~ .input{
+    border-color: #3e6ae1;
+}
+
+
+.input:focus~.input_label,
+.input:valid ~ .input_label{
+    top:-20px;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+
+.icon_span{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    z-index: 100;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.icon_span:hover ~ .input{
+    border-color: #3e6ae1;
+}
+
+.ref{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
+.forgot_and_save{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.ref:hover{
+    text-decoration: underline;
+}
+
+.create{
+    display: flex;
+    justify-content: center;
+}
+
+.social_reg{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+    max-height: 39px;
+}
+
+.social_reg_item{
+    margin-right: 1rem;
+    
+    cursor:pointer;
+    font-size: 24px;
+}
+
+.social_reg_item:hover{
+    z-index: 1;
+    font-size: 30px;
+}

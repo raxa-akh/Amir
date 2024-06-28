@@ -1,0 +1,119 @@
+.container_info{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.info_inner{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+
+
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 15px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+.about_user{
+    width: 30%;
+    padding: 15px;
+    border-right: 2px solid #ccc;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.user_photo{
+    border-radius: 15px;
+    background-color: #ccccccaa;
+}
+
+.user_img{
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    transition: transform 0.2s linear;
+}
+.user_photo:hover .user_img{
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.user_info{
+    margin-top: 10px;
+}
+
+.user_name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.courses_count{
+    font-size: 14px;
+    font-style: italic;
+}
+
+.sertificat_ref{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+}
+
+.sertificat_ref:hover{
+    text-decoration: underline;
+}
+
+.about_courses{
+    width: 68%;
+    padding: 15px;
+
+}
+
+.about_courses_title{
+    font-size: 30px;
+}
+
+.bought_courses{
+    display: flex;
+    flex-direction: column;
+}
+
+.bought_courses_item{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.courses_ref{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.courses_ref:hover{
+    text-decoration: underline;
+}
+
+.courses_status{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.courses_status-noend{
+    color: #df1b1b;
+}
+
+.courses_status-end{
+    color: #1ad810;
+}

@@ -1,0 +1,96 @@
+// // src/App.js
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import HomePage from './pages/HomePage';
+// import CoursesPage from './pages/CoursesPage';
+// import CourseDetailPage from './pages/CourseDetailPage';
+// import CartPage from './pages/CartPage';
+// import CheckoutPage from './pages/CheckoutPage';
+// import ProfilePage from './pages/ProfilePage';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
+
+// function App() {
+//   return (
+//     <Router>
+//       <Header />
+//       <Switch>
+//         <Route exact path="/" component={HomePage} />
+//         <Route path="/courses" component={CoursesPage} />
+//         <Route path="/course/:id" component={CourseDetailPage} />
+//         <Route path="/cart" component={CartPage} />
+//         <Route path="/checkout" component={CheckoutPage} />
+//         <Route path="/profile" component={ProfilePage} />
+//       </Switch>
+//       <Footer />
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+// src/context/AuthContext.js
+// import React, { createContext, useState } from 'react';
+
+// export const AuthContext = createContext();
+
+// export const AuthProvider = ({ children }) => {
+//   const [user, setUser] = useState(null);
+
+//   const login = (userData) => {
+//     setUser(userData);
+//   };
+
+//   const logout = () => {
+//     setUser(null);
+//   };
+
+//   return (
+//     <AuthContext.Provider value={{ user, login, logout }}>
+//       {children}
+//     </AuthContext.Provider>
+//   );
+// };
+
+// src/context/CartContext.js
+// import React, { createContext, useState } from 'react';
+
+// export const CartContext = createContext();
+
+// export const CartProvider = ({ children }) => {
+//   const [cartItems, setCartItems] = useState([]);
+
+//   const addToCart = (course) => {
+//     setCartItems([...cartItems, course]);
+//   };
+
+//   const removeFromCart = (courseId) => {
+//     setCartItems(cartItems.filter(item => item.id !== courseId));
+//   };
+
+//   return (
+//     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart }}>
+//       {children}
+//     </CartContext.Provider>
+//   );
+// };
+
+// src/components/Course/CourseCard.js
+// import React, { useContext } from 'react';
+// import { CartContext } from '../../context/CartContext';
+
+// const CourseCard = ({ course }) => {
+//   const { addToCart } = useContext(CartContext);
+
+//   return (
+//     <div>
+//       <h2>{course.title}</h2>
+//       <p>{course.description}</p>
+//       <button onClick={() => addToCart(course)}>Добавить в корзину</button>
+//     </div>
+//   );
+// };
+
+// export default CourseCard;
+
